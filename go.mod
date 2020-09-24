@@ -1,5 +1,5 @@
-module github.com/Iftikhor99/stats
+module github.com/Iftikhor99/stats/v2
 
 go 1.15
 
-require github.com/Iftikhor99/bank v0.0.0-20200924183942-98eed80aef67
+require github.com/Iftikhor99/bank/v2 v2.0.0
