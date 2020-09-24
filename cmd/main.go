@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Iftikhor99/bank/pkg/types"
+	"github.com/Iftikhor99/bank/v2/pkg/types"
 )
 
 func main() {
-	fmt.Println(types.TJS)
+	fmt.Println(types.EUR)
 }
