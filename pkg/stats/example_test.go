@@ -47,3 +47,27 @@ func ExampleTotalInCategory() {
 	//Output:2000000
 	
 }
+
+func ExampleCategoriesAvg() {
+
+payments := []types.Payment{
+	types.Payment {
+		Amount: 10_000_00,
+		Category: "auto",
+		Status: types.StatusFail,
+	},
+	types.Payment {
+		Amount: 20_000_00,
+		Category: "auto",
+		Status: types.StatusOk,
+	},
+	types.Payment {
+		Amount: 30_000_00,
+		Category: "restaurant",
+		Status: types.StatusOk,
+	},
+}
+fmt.Println(CategoriesAvg(payments))
+//map[auto:2000000 restaurant:3000000]
+
+}
