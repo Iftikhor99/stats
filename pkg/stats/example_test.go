@@ -71,3 +71,20 @@ fmt.Println(CategoriesAvg(payments))
 //map[auto:2000000 restaurant:3000000]
 
 }
+
+func ExamplePeriodsDynamic() {
+
+	first := map[types.Category]types.Money{
+		"auto": 10,
+		"food": 20,
+	}
+
+	second := map[types.Category]types.Money{
+		"auto": 5,
+		"food": 3,
+	}
+	
+	fmt.Println(PeriodsDynamic(first,second))
+	//map[auto:2000000 restaurant:3000000]
+	
+}
